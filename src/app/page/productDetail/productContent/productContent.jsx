@@ -30,7 +30,6 @@ class ProductContent extends Component {
                     <div className='wrapper'>
                         <h2>{product.title}</h2>
                         <p>{product.content}</p>
-                        <h4><span>{product.priceLow} - {product.priceHight}</span>vnd/1 cái - 1000 cái (Đơn hàng tối thiểu)</h4>
                         <a href="#form-section" className="btn">Nhập thông tin đặt hàng </a>
                     </div>
     

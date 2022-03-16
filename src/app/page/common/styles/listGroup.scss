@@ -9,6 +9,9 @@
   text-align: center;
   &__logo {
       color: #fff;
+      cursor :pointer ; 
+      font-size: 2rem ; 
+      font-weight: 700 ; 
   }
   &__avatar {
     margin-top: 4rem;

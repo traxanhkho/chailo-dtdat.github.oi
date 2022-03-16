@@ -23,7 +23,7 @@ const ListGroup = () => {
   return (
     <section className="menu">
       <a href="/#" className="menu__logo">
-        Your Logo
+        HOME
         <img src="" alt="" />
       </a>
       <div className="menu__avatar">

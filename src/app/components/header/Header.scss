@@ -54,15 +54,13 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    &-icon {
-      width: 22px;
-      height: 22px;
-      margin-right: 10px;
-    }
     &-number {
       margin: 0;
-      font-size: 1.8rem;
+      font-size: 2.4rem;
+      font-weight: 700 ; 
       color: #252d2e;
+      cursor: pointer ; 
+      text-transform : uppercase ; 
     }
     &:hover path,
     &:hover &-number {

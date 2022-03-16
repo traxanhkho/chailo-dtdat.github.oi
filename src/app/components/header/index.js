@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { phoneNumber } from "app/page/contact";
+import { Link } from 'react-router-dom' ; 
 import { icons } from "assets/icons/icons-svg";
 import "./Header.scss";
 
@@ -87,12 +87,9 @@ export const Header = () => {
             {icons.iconSearch}
           </i>
         </div>
-        <a href={"tel:" + phoneNumber} className="header__contact">
-          <i className="header__contact-icon">
-            {icons.iconPhone}
-          </i>
-          <p className="header__contact-number">{phoneNumber}</p>
-        </a>
+        <Link to="/admin" className="header__contact">
+          <p className="header__contact-number">Đăng Nhập</p>
+        </Link>
       </div>
     </header>
   );
