@@ -61,6 +61,14 @@ class ContainerAdmin extends Component {
               />
             )}
           />
+          <Route path="/admin" render={(props) => (
+              <AllProducts
+                products={products}
+                columns={this.columns.allProducts}
+                {...props}
+                onDelete={this.props.onDelete}
+              />
+            )}/>
           <Route
             path="/admin/all-products"
             render={(props) => (

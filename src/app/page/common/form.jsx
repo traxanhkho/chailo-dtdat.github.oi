@@ -67,11 +67,14 @@ class Form extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
-    this.setState({ errors: this.validate() });
+    const errors = this.validate();
+    this.setState({ errors });
+    console.log(this.state.errors, this.validate())
+    if (!errors.title && !errors.content ) {
+      saveProduct(this.state.data);
+      this.props.history.push("/admin/all-products");
+    }
 
-    saveProduct(this.state.data);
-
-    this.props.history.push("/admin/all-products");
   };
 
   handleChange = ({ currentTarget: input }) => {

@@ -35,6 +35,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position : relative  ; 
+}
+
+.modal-form .modal-body form .form-group .alert {
+  position: absolute;
+  left: 98px;
+  top: 76px;
+  padding: 0 .4rem;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
 }
 
 .modal-form .modal-body form .form-group label {
