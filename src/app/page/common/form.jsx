@@ -69,7 +69,7 @@ class Form extends Component {
 
     const errors = this.validate();
     this.setState({ errors });
-    console.log(this.state.errors, this.validate())
+
     if (!errors.title && !errors.content ) {
       saveProduct(this.state.data);
       this.props.history.push("/admin/all-products");
