@@ -1,0 +1,17 @@
+.slide {
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 46.1875em) {
+  .slide {
+    display: unset;
+  }
+}
+
+// Tablet: width >= 740px and width < 1024px
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .slide {
+    display: unset;
+  }
+}

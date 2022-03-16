@@ -1,0 +1,94 @@
+html {
+  font-size: 62.5%;
+}
+
+.list-product div .wrapper-item {
+  width: 100%;
+  margin: 1.5rem 0;
+  box-shadow: 0px 7px 30px 0px #00000014;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  background: #fff;
+}
+
+.list-product div .wrapper-item img {
+  width: 100%;
+  height: 36rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.list-product div .wrapper-item .content {
+  padding: 1.6rem 0;
+}
+
+.list-product div .wrapper-item .content h4 {
+  color: #252d2e;
+  height: 4rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.list-product div .wrapper-item .content div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.list-product div .wrapper-item .content h4{
+  margin-bottom: 1.2rem ; 
+}
+
+
+.list-product div .wrapper-item .content .btn {
+  margin: 0;
+  width: 100%;
+  font-size: 1.6rem;
+  border-radius: 0.8rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .list-product div .wrapper-item img {
+    height: 28rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .list-product div .wrapper-item img {
+    height: 24rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .list-product div .wrapper-item img {
+    height: 28rem;
+  }
+
+  .list-product div .wrapper-item .content {
+    padding: 0.8rem;
+  }
+
+  .list-product div .wrapper-item .content h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    height: 3.2rem;
+  }
+
+  .list-product div .wrapper-item .content div {
+    margin-bottom: 0.4rem;
+  }
+
+  .list-product div .wrapper-item .content div span {
+    font-size: 1.4rem;
+  }
+
+  .list-product div .wrapper-item .content div p {
+    font-size: 1rem;
+  }
+}

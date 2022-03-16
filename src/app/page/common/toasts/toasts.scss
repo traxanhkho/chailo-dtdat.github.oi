@@ -1,0 +1,112 @@
+:root {
+  --success-color: rgb(0, 128, 0);
+  --warn-color: rgb(255, 165, 0);
+  --error-color: rgb(255, 0, 0);
+
+  --success-light-color: rgba(0, 128, 0, 0.5);
+  --warn-light-color: rgba(255, 165, 0, 0.5);
+  --error-light-color: rgba(255, 0, 0, 0.5);
+}
+
+.toasts {
+  position: fixed;
+  z-index: 120;
+  top: 10rem;
+  right: 1rem;
+  .toast-box {
+    margin-bottom: 1rem;
+    padding: 2.6rem 3rem;
+    padding-right: 4rem;
+    font-size: 2.6rem;
+    border-radius: 0.6rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: slide-show 1.5s ease forwards;
+    &__msg {
+      font-size: 1.8rem;
+      margin-left: 2rem;
+    }
+    &__countdown {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      animation: count-down 2s ease forwards;
+    }
+    &.success {
+      background: var(--success-light-color);
+      border-left: 0.6rem solid var(--success-color);
+      & .toast-box__countdown {
+        border-bottom: 0.4rem solid var(--success-color);
+      }
+    }
+
+    &.warning {
+      background: var(--warn-light-color);
+      border-left: 0.6rem solid var(--warn-color);
+      & .toast-box__countdown {
+        border-bottom: 0.4rem solid var(--warn-color);
+      }
+    }
+
+    &.error {
+      background: var(--error-light-color);
+      border-left: 0.6rem solid var(--error-color);
+      & .toast-box__countdown {
+        border-bottom: 0.4rem solid var(--error-color);
+      }
+    }
+    &.hide {
+      animation: slide-hide 1.5s ease forwards;
+    }
+  }
+}
+
+@keyframes count-down {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes slide-show {
+  0% {
+    transform: translateX(100%);
+  }
+
+  25% {
+    transform: translateX(-10%);
+  }
+
+  50% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-5%);
+  }
+}
+
+@keyframes slide-hide {
+  0% {
+    transform: translateX(-5%);
+  }
+
+  25% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(-5%);
+  }
+
+  100% {
+    transform: translateX(110%);
+  }
+}

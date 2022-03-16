@@ -1,0 +1,65 @@
+:root {
+    --primary: #FF477E;
+    --price-text: #FF6259;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.home-below h2 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #252D2E;
+    text-align: center;
+    margin: 10.8rem 0 2.5rem;
+}
+
+.home-below .pagination {
+    margin-bottom: 8rem;
+}
+
+.home-below .row {
+    margin-bottom: 6rem;
+}
+
+@media (max-width: 1380px) {
+    .home-below .row div .wrapper-item .content {
+        padding: 1.2rem 0;
+    }
+    .home-below .row div .wrapper-item .content .btn {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .home-below {
+        width: 100%;
+        & .row {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+// Tablet: width >= 740px and width < 1024px
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .home-below {
+        width: 100%;
+        & .row {
+            margin-bottom: 0;
+        }
+    }
+  }
+
+@media (max-width: 450px) {
+    .home-below {
+        width: 100%;
+    }
+}

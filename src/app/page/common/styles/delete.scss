@@ -1,0 +1,53 @@
+.box-message {
+    position : absolute ; 
+    top: 16rem; 
+    right : 0 ; 
+    left: 0 ; 
+    margin: auto ; 
+    z-index: 1000111 ;
+    display: flex;
+    justify-content: center;
+    &-wrapper {
+        width: 30rem;
+        background-color: #fafafa;
+        box-shadow: 0px 10px 30px 0px #00000014;
+        text-align: center;
+        padding: 2.5rem;
+        border-radius: 1.6rem;
+        height: 16rem;
+        animation: TopSlide 0.25s linear;
+        & h2 {
+            margin-bottom: 2rem;
+            color: #777777;
+        }
+    }
+    &-btn button {
+        padding: 0.4rem 2.4rem;
+        outline: none;
+        border: none;
+        border-radius: 0.6rem;
+        color: #fff;
+        font-size: 1.8rem;
+        transition: 0.25s;
+        margin: 0 0.8rem;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+    &-btn--cancel {
+        background-color: #ff6464;
+    }
+    &-btn--delete {
+        background-color: #44be44;
+        width: 12rem;
+    }
+}
+
+@keyframes TopSlide {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,50 @@
+:root{
+  --primary : #FF477E;
+  --price-text : #FF6259 ; 
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* product container */
+
+.product-container{
+  margin-top: 3.6rem ; 
+}
+
+@media (max-width: 1380px){
+  html{
+    font-size: 60% ; 
+  }
+}
+
+@media (max-width : 991px){
+  .product {
+    width: 100% ; 
+  }
+}
+
+@media (max-width : 768px){
+
+  .product .filter h6{
+    width: 100%  ; 
+  } 
+
+}
+
+@media (max-width : 450px){
+  .product .filter span{
+    margin: 0 .8rem ; 
+  }
+
+  .product {
+    width: 100% ; 
+  }
+}

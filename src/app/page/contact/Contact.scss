@@ -1,0 +1,214 @@
+.contact {
+  width: 100%;
+  &__title {
+    margin-top: 40px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: var(--primary-color);
+  }
+  &__desc {
+    margin: 0;
+    font-size: 4.6rem;
+    font-weight: 900;
+    color: #333333;
+  }
+  &__content {
+    display: flex;
+    margin-top: 80px;
+    &-image {
+      margin-right: 80px;
+      width: 466px;
+      height: 345px;
+      border-radius: 16px;
+    }
+    &-line {
+      margin: 0 10px;
+      margin-bottom: 16px;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      color: var(--text-color);
+    }
+    &-line:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #95d641;
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22284%22%20height%3D%22284%22%20viewBox%3D%220%200%20284%20284%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Ccircle%20cx%3D%22142%22%20cy%3D%22142%22%20r%3D%22142%22%20fill%3D%22white%22%20fill-opacity%3D%220.3%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center right -34px;
+    width: 857px;
+    height: 119px;
+    margin: 0 auto;
+    margin-top: 93px;
+    padding: 0 40px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 30px;
+    &-item:first-child {
+      display: flex;
+      align-items: center;
+      &.contact__card-item-text {
+        font-size: 1.8rem;
+      }
+    }
+    &-item {
+      &-logo {
+        margin-right: 16px;
+        border: 9px solid rgba(255, 255, 255, 0.4);
+        box-shadow: 0px 12.3421px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 50%;
+        background-image: url("data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2053%2053%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.0527344%22%20y%3D%220.0527344%22%20width%3D%2253%22%20height%3D%2253%22%20rx%3D%2226%22%20fill%3D%22white%22%2F%3E%0A%3Cpath%20d%3D%22M38.2868%2022.6034C38.2868%2030.855%2030.6523%2035.7213%2027.2318%2036.885C26.8263%2037.0261%2026.1739%2037.0261%2025.7684%2036.885C24.3049%2036.3913%2022.0657%2035.21%2020.0029%2033.3939C17.2171%2030.9431%2014.7134%2027.3287%2014.7134%2022.6034C14.7134%2018.9537%2017.6402%2016.0092%2021.2547%2016.0092C23.4057%2016.0092%2025.31%2017.0495%2026.5089%2018.6363C27.6902%2017.0495%2029.5944%2016.0092%2031.7455%2016.0092C32.68%2016.0092%2033.5615%2016.2032%2034.3726%2016.5558C36.6823%2017.5784%2038.2868%2019.8881%2038.2868%2022.6034Z%22%20fill%3D%22%23FF477E%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 67px;
+        height: 67px;
+      }
+      &-text {
+        width: 360px;
+        margin: 0;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        color: var(--white-color);
+      }
+      &-btn {
+        width: 154px;
+        height: 40px;
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+          ),
+          #0050c9;
+        color: var(--white-color);
+        box-shadow: 0px 12.3421px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        font-size: 1.6rem;
+      }
+      &-phone {
+        margin: 0;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #003f9e;
+      }
+    }
+  }
+  &__info {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    & a {
+      text-decoration: none;
+      color: #003f9e;
+      font-weight: 500;
+    }
+  }
+}
+
+// Mobile: width < 740px
+@media (max-width: 46.1875em) {
+  .contact {
+    &__desc {
+      font-size: 2.6rem;
+    }
+    &__content {
+      display: block;
+      margin-top: 26px;
+      &-image {
+        width: 100%;  
+        height: 283px;
+      }
+      &-list {
+        margin-top: 16px;
+      }
+    }
+    &__card {
+      margin-top: 24px;
+      padding: 16px 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 147px;
+      background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22536%22%20height%3D%22176%22%20viewBox%3D%220%200%20536%20176%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cellipse%20cx%3D%22268%22%20cy%3D%2288%22%20rx%3D%22268%22%20ry%3D%2288%22%20fill%3D%22white%22%20fill-opacity%3D%220.3%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center bottom -96px;
+      &-item:last-child {
+        display: flex;
+      }
+      &-item {
+        &-logo {
+          display: block;
+          background-image: #000;
+          width: 51px;
+          height: 51px;
+          border-width: 6px;
+        }
+        &-text {
+          width: 287px;
+          font-size: 1.4rem;
+          line-height: 2rem;
+        }
+        &-btn {
+          margin-right: 16px;
+        }
+      }
+    }
+    &__info {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      margin: 18px 0 40px;
+    }
+  }
+}
+
+// Tablet: width >= 740px and width < 1024px
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .contact {
+    &__desc {
+      font-size: 2.6rem;
+    }
+    &__content {
+      display: block;
+      margin-top: 26px;
+      &-image {
+        margin: 0 auto;
+      }
+      &-list {
+        margin-top: 16px;
+      }
+    }
+    &__card {
+      margin-top: 24px;
+      padding: 16px;
+      width: 100%;
+      height: 147px;
+      &-item:last-child {
+      }
+      &-item {
+        &-logo {
+          display: block;
+          background-image: #000;
+          width: 51px;
+          height: 51px;
+          border-width: 6px;
+        }
+        &-text {
+          width: 200px;
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+        }
+      }
+    }
+    &__info {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      margin: 18px 0 50px;
+    }
+  }
+}

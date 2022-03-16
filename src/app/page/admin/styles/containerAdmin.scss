@@ -1,0 +1,37 @@
+:root {
+  --width-menu: 14.6rem;
+}
+
+.container {
+  position: relative;
+  z-index: 105;
+  background: #fff;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  min-height: 100vh;
+  font-size: 1.6rem;
+}
+
+.btn-delete,
+.btn-edit {
+    cursor: pointer;
+  & svg {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  
+}
+
+.btn-delete  path {
+    stroke: red;
+  }
+  .btn-edit path {
+    stroke: green;
+  }
+
+.btn-delete:hover,
+.btn-edit:hover {
+    opacity: 0.6;
+}

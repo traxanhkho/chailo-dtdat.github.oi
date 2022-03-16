@@ -1,0 +1,56 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  &-item {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 1rem;
+    &.active {
+      background-color: var(--primary-color);
+      & .pagination-link {
+        color: #fff;
+      }
+    }
+  }
+  &-link {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+}
+
+/* Responsive */
+
+// Mobile: width < 740px
+@media (max-width: 46.1875em) {
+  .pagination {
+    margin-bottom: 5rem;
+    &-item {
+        width: 4rem;
+        height: 4rem;
+      }
+      &-link {
+        font-size: 1.4rem;
+      }
+  }
+}
+
+// Tablet: width >= 740px and width < 1024px
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .pagination {
+    margin-bottom: 5rem;
+    &-item {
+        width: 4.5rem;
+        height: 4.5rem;
+      }
+      &-link {
+        font-size: 1.6rem;
+      }
+  }
+}
