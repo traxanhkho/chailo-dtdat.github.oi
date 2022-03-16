@@ -5,10 +5,11 @@ import "./styles/modal.css";
 class Modal extends Component {
 
   render() {
-    const { history , products , match } = this.props;
+    const { history , products , match , heading} = this.props;
   
     return (
       <Form 
+        heading={heading}
         match={match}
         history={history}
         products={products}

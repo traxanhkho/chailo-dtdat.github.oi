@@ -94,7 +94,7 @@ class Form extends Component {
     return (
       <div className="modal-form">
         <div className="modal-body">
-          <h1>Thêm Sản Phẩm</h1>
+          <h1>{this.props.heading}</h1>
           <form onSubmit={this.handleSubmit}>
             <div className="form-group">
               <label htmlFor="title">Title :</label>

@@ -14,10 +14,10 @@ const AllProducts = ({ products  , columns , products : data }) => {
           Thêm</Link>
       <Table heading="Sản Phẩm" columns={columns} data={data}/>
       <Switch>
-        <Route path="/admin/all-products/create-product" render={(props) => <Modal
+        <Route path="/admin/all-products/create-product" render={(props) => <Modal heading="Nhập Thông Tin Tạo Mới:"
         products={products} {...props}/>} />
         {/* routing to edit a product */}
-        <Route path="/admin/all-products/:_id" render={(props) => <Modal
+        <Route path="/admin/all-products/:_id" render={(props) => <Modal heading= "Nhập Thông Tin Thay Đổi:"
         products={products} {...props}/>} />
       </Switch>
       
